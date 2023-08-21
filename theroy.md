@@ -111,3 +111,22 @@ To make our app compatible with older version of browsers we use browser list.We
 Major.Minor.Patch
 Caret(^) - It is used for automatically updating the minor updates along with patch updates.
 Tilde(~) - It is used to match the most recent patch version. Tilde ~ notation freezes the major version and minor version.
+
+//Laying the foundation
+
+# 1- What is JSX ?
+
+JSX is a syntax , it is an HTML like syntax but not HTML, JSX is different and React is different, we can write React code without JSX, but the React.createElement() is not developer friendly and as our App grows it become more complicated so React developer introduced JSX to make the code simple and readable.
+When we installed parcel in our app, it installed many dependency and one of them is babel, so babel is a javascript complier and transpiler, so babel converts the JSX code to React.createElement() and from there the browser understannds it and our app is rendered by the help of root.render() method.
+So what happens is, JSX => React.createElement() => React element which is JS Object => Html element
+
+# 2- Superpowers of JSX
+
+JSX have many superpowers, some of them are:-
+1- JSX is an HTML like syntax its easy to code and developer friendly
+2- We can write any javascript in JSX within "{}" and it will executed, which we cannot do in HTML
+3- JSX also Sanitizes the data too, i.e if we fetch data from API and it gives some malicious data or script and can get sensetive information from users system (cross-site scripting attacks), JSX sanitizes it and prevent it to happen automatically
+
+# 3- {TitleComponent()} and {<TitleComponent/>} and {<TitleComponent><TitleComponent/>}
+
+Everything are same here all of the code will do same thing i.e render the JSX on browser after all transpiling and conversion done by Babel
