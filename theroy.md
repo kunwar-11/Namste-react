@@ -130,3 +130,84 @@ JSX have many superpowers, some of them are:-
 # 3- {TitleComponent()} and {<TitleComponent/>} and {<TitleComponent><TitleComponent/>}
 
 Everything are same here all of the code will do same thing i.e render the JSX on browser after all transpiling and conversion done by Babel
+
+# imp
+
+remember it is an react element which is a javascript object and render() function will convert it to HTML element and print it on screen
+
+// Talk is Cheap Show me the code
+
+# 1- Is JSX mandatory for React ?
+
+No, not at all, React can work and run perfectly without JSX. JSX is just a syntax, which looks like HTML, and make it easy to code React Application, behind the scene JSX is converted to React.createElement() by Babel and works the same after this.
+
+# 2- Is ES6 mandatory for React ?
+
+No, we ES6 is not mandatory for React, we can right React with ES5 syntax (i.e older versions of Javascript) too
+
+# 3- {TitleComponent} vs {<TitleComponent />} vs{<TitleComponent></TitleComponent>} in JSX ?
+
+All of them are a way of rendering Component
+
+-{TitleComponent}: This represents a value in the javascript. If there is
+a variable called TitleComponent then it will render the variable value in
+the page.
+
+- {<TitleComponent />}: This will return a React component in the page.
+  There is no children passed in the parameter.
+
+- {<TitleComponent></TitleComponent>}: This is another way of
+  rendering React component just like the self closing one. This way is
+  used when we are supposed to provide some children in the Component
+  as well
+
+# 4- How can I write Comments in JSX ?
+
+We can write comment in JSX by putting // or /\* \*/ inside a curly braces {}
+
+# 5- What is <React.Fragment></React.Fragment> or <></> ?
+
+React.Fragment or <></> is generally used to wrap the elements.
+React only allows to return only one component. So if we want to return multiple
+components then we use Fragment to wrap those elements. IT is better to use
+Fragments instead of div because fragments doesn’t add another node in
+DOM.
+
+# 6- What is Virtual DOM ?
+
+Virtual DOM is a lightweight copy of an actual DOM. It is used by react
+to optimize the performance of the app by only changing the nodes which are
+necessary in actual DOM instead of rerendering the whole DOM.
+So when there is a chance in any node it done in the virtual DOM and then it compared with Real DOM and only those part/node are updated in DOM which are changed
+
+# 7- Why do we need keys in React ? When do we need keys in React ?
+
+We need keys in React so that React can identify the individual
+elements in the DOM. Whenever there is any change the in nodes like if any
+node is inserted, deleted or modified, React can identify the individual
+node/nodes from the keys and make minimal and efficient changes in the DOM.
+So adding keys increases the performance of React rendering so it is
+recommended to give keys to all the elements.
+So if there a multple component rendered from an Array and there is no key and some component is added in between or start
+or modified then react will not be able to find which element is modified or added
+hence it will re-render all component, but if there is a key then it will only render / re-render
+the component added/ component updated not all the components
+
+# 8- Can we use index as keys in React ?
+
+It is not recommended to use index as keys in React but we can use
+the index as keys. The issue with it is that if we give index as keys then the
+performance of the app may suffer. So even though we can use index as keys
+but it is not recommended to do so.
+
+# 9- What are props in React?
+
+Props (properties) are the variable of functions which we pass from a parent to a
+child component in React. Props are the means of passing data from one
+component to another.
+
+# 10- What is a config driven UI?
+
+Config driven UI means that we are controlling our UI based on the data
+which might come from backend APIs or somewhere else. So we render component
+based on the config data.
