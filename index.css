@@ -8,6 +8,7 @@
 
 .logo {
   width: 100px;
+  height: auto;
 }
 
 .nav-items {
@@ -28,7 +29,6 @@
 
 .restaurent-card {
   width: 250px;
-  height: 300px;
   transition: ease-in 0.5s;
   padding: 0.5rem;
 }
@@ -37,7 +37,10 @@
   border: 1px solid black;
   cursor: pointer;
 }
-
+.restaurent-card-body {
+  display: flex;
+  flex-direction: column;
+}
 .restaurant-container {
   display: flex;
   flex-wrap: wrap;
