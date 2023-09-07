@@ -23,8 +23,9 @@
   font-size: 20px;
 }
 
-.search-bar {
-  padding: 1rem;
+.filter-btn {
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .restaurent-card {

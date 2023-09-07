@@ -211,3 +211,26 @@ component to another.
 Config driven UI means that we are controlling our UI based on the data
 which might come from backend APIs or somewhere else. So we render component
 based on the config data.
+
+// Let's Get Hooked
+
+# 1- What is the difference between "Named" export, "Default" export and "\* as" export ?
+
+The "Named" export are used when we want to pass multiple funcions or piece of code from a Single File
+The "Default" export are used when we want to export a single function or piece of code from a file
+The "\* as" export are used When we export a number of functions from a module and then we want to import all of them in a single line then we use \* for that. Although we need to use dot notation in order to use them.
+
+# 2- What is the importance of config.js file?
+
+We should try to never keep hard coded data into components as best practices and in order to keep our code clean.
+We often keep these sort of data in another files and the most commonly used names for those files are constant.js/utils.js/config.js/common.js.
+
+# 3- What are React Hooks?
+
+React Hooks are utilities provided by react. These are simple JavaScript Functions.
+
+# 4- Why do we need a useState Hook?
+
+We often need to track some variable in our code, which means these variables change state and we need to manage their state.
+useState() hook does exactly that. It manages the states of stateful variable.
+useState helps to keep the UI layer in sync with the Data layer.
